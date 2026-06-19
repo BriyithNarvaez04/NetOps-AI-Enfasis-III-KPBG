@@ -152,7 +152,7 @@ Deberías ver `hermes-netops`, `router1` y `router2` en estado `Up`.
 | `docker-compose.yml` | Orquesta tres servicios: **hermes** (agente con `network_mode: host`, `privileged: true`, capabilities `NET_RAW`/`NET_ADMIN` y socket de Docker montado), **router1** (`172.30.0.10`) y **router2** (`172.30.0.20`) como contenedores FRRouting en la subred `172.30.0.0/24`. |
 | `control_server.py` | Servidor HTTP mínimo en `127.0.0.1:9999` (VM host). Expone `/start_apache`, `/stop_apache`, `/restart_apache` y `/status_apache`. Permite al contenedor ejecutar `systemctl` en la VM sin privilegios sudo directos, usando `subprocess` y devolviendo la salida como texto plano. |
 | `start_control_server.sh` | Mata cualquier instancia previa de `control_server.py` y la relanza en segundo plano con `nohup`, redirigiendo la salida a `control_server.log`. |
-| `hermes-data/system_prompt.md` | Cerebro de comportamiento del agente. Define las reglas absolutas (responder en español, nunca inventar salidas), el menú del usuario, el mapeo de intenciones a scripts y los flujos de diagnóstico paso a paso ante alertas de Apache o solicitudes de enrutamiento alternativo. |
+| `hermes-data/system_prompt.md` | Cerebro de comportamiento del agente. Define las reglas absolutas (responder en español, nunca inventar salidas), el mapeo de intenciones a scripts y los flujos de diagnóstico paso a paso ante alertas de Apache o solicitudes de enrutamiento alternativo. |
 | `hermes-data/AGENTS.md` | Versión compacta del prompt con los comandos exactos mapeados a cada intención, usada como referencia rápida interna por Hermes al construir el contexto de cada conversación. |
 | `skills/network-tools/network_tools.py` | Cuatro acciones: `ping` (4 paquetes), `traceroute` (máx. 15 saltos), `arp` (tabla ARP del sistema) y `snmp` (SNMPv2c al OID de descripción). Incluye validación de entrada con `ipaddress` y regex para prevenir inyección de comandos. |
 | `skills/network-tools/service_check.py` | Verifica Apache (puerto 80) y SSH (puerto 22) con `netcat`. Si un servicio no responde, ejecuta diagnóstico automático (`pgrep`, `ss -tlnp`, `systemctl status`) y devuelve el resultado formateado con emojis y recomendaciones listas para Telegram. |
@@ -304,15 +304,6 @@ docker exec -it router1 vtysh -c "show interfaces brief"
 ## Comandos recomendados en Telegram
 
 Una vez el agente esté corriendo, prueba los siguientes mensajes en orden para validar cada funcionalidad:
-
-### Menú y presentación
-
-```
-menu
-```
-```
-/start
-```
 
 ### Conectividad básica
 
