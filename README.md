@@ -523,8 +523,6 @@ docker exec -it hermes-netops bash
 - El contenedor corre con `privileged: true` y las capabilities `NET_RAW` / `NET_ADMIN` para que `ping` y `traceroute` funcionen correctamente dentro del contenedor.
 - La red de los routers virtuales es `172.30.0.0/24`. `router1` tiene la IP `.10` y `router2` tiene la `.20`.
 - El archivo `hermes-data/system_prompt.md` define el comportamiento completo del agente: idioma, flujos de diagnóstico y mapeo de intenciones a scripts.
-- Para agregar las capturas al README, crea la carpeta `docs/capturas/` en la raíz del repositorio y guarda cada imagen con el nombre indicado en la sección de evidencias.
-
 ---
 
 ##  Conclusión
