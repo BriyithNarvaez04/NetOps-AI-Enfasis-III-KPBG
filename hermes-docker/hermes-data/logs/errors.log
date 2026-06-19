@@ -1,0 +1,295 @@
+2026-06-17 07:13:00,528 WARNING gateway.run: Telegram: python-telegram-bot not installed
+2026-06-17 07:13:00,531 WARNING gateway.run: No adapter available for telegram
+2026-06-17 07:13:00,533 WARNING gateway.run: No adapter could be created for any of the 1 configured platform(s). Check that required dependencies are installed and credentials are set. Gateway will continue for cron job execution.
+2026-06-17 07:20:21,445 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.09 parent_cmdline='(unknown)'
+2026-06-17 07:20:33,941 ERROR gateway.platforms.telegram: [Telegram] Failed to connect to Telegram: The token `TU_TOKEN_DE_TELEGRAM` was rejected by the server.
+Traceback (most recent call last):
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 865, in initialize
+    await self.get_me()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2040, in get_me
+    return await super().get_me(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 1005, in get_me
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.InvalidToken: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/hermes-agent/gateway/platforms/telegram.py", line 2110, in connect
+    await self._app.initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 489, in initialize
+    await self.bot.initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 324, in initialize
+    await super().initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 868, in initialize
+    raise InvalidToken(f"The token `{self._token}` was rejected by the server.") from exc
+telegram.error.InvalidToken: The token `TU_TOKEN_DE_TELEGRAM` was rejected by the server.
+2026-06-17 07:20:33,963 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-17 07:20:33,991 WARNING gateway.run: Gateway started with no connected platforms — 1 platform(s) queued for retry: telegram: Telegram startup failed: The token `TU_TOKEN_DE_TELEGRAM` was rejected by the server.
+2026-06-17 07:20:33,997 WARNING gateway.run: No adapter could be created for any of the 1 configured platform(s). Check that required dependencies are installed and credentials are set. Gateway will continue for cron job execution.
+2026-06-17 07:21:05,952 ERROR gateway.platforms.telegram: [Telegram] Failed to connect to Telegram: The token `TU_TOKEN_DE_TELEGRAM` was rejected by the server.
+Traceback (most recent call last):
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 865, in initialize
+    await self.get_me()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 2040, in get_me
+    return await super().get_me(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 1005, in get_me
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 712, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 378, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 741, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.InvalidToken: Not Found
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/hermes-agent/gateway/platforms/telegram.py", line 2110, in connect
+    await self._app.initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_application.py", line 489, in initialize
+    await self.bot.initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 324, in initialize
+    await super().initialize()
+  File "/usr/local/lib/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 868, in initialize
+    raise InvalidToken(f"The token `{self._token}` was rejected by the server.") from exc
+telegram.error.InvalidToken: The token `TU_TOKEN_DE_TELEGRAM` was rejected by the server.
+2026-06-17 07:21:23,489 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.10 parent_cmdline='(unknown)'
+2026-06-17 07:22:12,510 ERROR gateway.run: Agent error in session agent:main:telegram:dm:1949036885
+Traceback (most recent call last):
+  File "/usr/local/lib/hermes-agent/gateway/run.py", line 8999, in _handle_message_with_agent
+    agent_result = await self._run_agent(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/gateway/run.py", line 15793, in _run_agent
+    response = _executor_task.result()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/gateway/run.py", line 12125, in _run_in_executor_with_context
+    return await loop.run_in_executor(None, ctx.run, func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/hermes-agent/gateway/run.py", line 14780, in run_sync
+    agent = AIAgent(
+            ^^^^^^^^
+  File "/usr/local/lib/hermes-agent/run_agent.py", line 418, in __init__
+    init_agent(
+  File "/usr/local/lib/hermes-agent/agent/agent_init.py", line 863, in init_agent
+    raise RuntimeError(
+RuntimeError: Provider 'openai-api' is set in config.yaml but no API key was found. Set the OPENAI_API_KEY environment variable, or switch to a different provider with `hermes model`.
+2026-06-17 07:23:34,096 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.21 parent_cmdline='(unknown)'
+2026-06-17 07:23:54,998 WARNING [20260617_072203_8692201d] agent.conversation_loop: Stored system prompt for session 20260617_072203_8692201d is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-06-17 07:27:22,461 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.02 parent_cmdline='(unknown)'
+2026-06-17 07:54:38,014 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.09 parent_cmdline='(unknown)'
+2026-06-17 07:55:22,078 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ReadError: 
+2026-06-17 07:55:22,084 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-06-17 07:55:47,206 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.2s): send_path_degraded
+2026-06-17 07:55:49,456 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 2/2, retrying in 5.0s): send_path_degraded
+2026-06-17 07:55:54,419 ERROR gateway.platforms.base: [Telegram] Failed to deliver response after 2 retries: send_path_degraded
+2026-06-18 18:07:05,911 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.66 parent_cmdline='(unknown)'
+2026-06-18 18:55:28,716 WARNING cron.scheduler: Job '905c698beba0': no delivery target resolved for deliver=telegram
+2026-06-18 19:26:47,053 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.14 parent_cmdline='(unknown)'
+2026-06-18 19:33:12,936 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.14 parent_cmdline='(unknown)'
+2026-06-18 19:36:45,136 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.08 parent_cmdline='(unknown)'
+2026-06-18 19:40:45,896 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.43 parent_cmdline='(unknown)'
+2026-06-18 19:42:19,185 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=asyncio_0:140005925373632 provider=openai-api base_url=https://ollama.com/v1 model=llama3.1:8b summary=HTTP 404: model "llama3.1:8b" not found
+2026-06-18 19:42:19,197 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 2.4284356700329996s (attempt 1/3) thread=asyncio_0:140005925373632 provider=openai-api base_url=https://ollama.com/v1 model=llama3.1:8b error=Error code: 404 - {'error': {'message': 'model "llama3.1:8b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-18 19:42:25,630 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=asyncio_0:140005925373632 provider=openai-api base_url=https://ollama.com/v1 model=llama3.1:8b summary=HTTP 404: model "llama3.1:8b" not found
+2026-06-18 19:42:25,641 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 5.680240226247809s (attempt 2/3) thread=asyncio_0:140005925373632 provider=openai-api base_url=https://ollama.com/v1 model=llama3.1:8b error=Error code: 404 - {'error': {'message': 'model "llama3.1:8b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-18 19:42:35,341 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=asyncio_0:140005925373632 provider=openai-api base_url=https://ollama.com/v1 model=llama3.1:8b summary=HTTP 404: model "llama3.1:8b" not found
+2026-06-18 19:42:35,364 ERROR [20260618_190547_80a589a4] agent.conversation_loop: API call failed after 3 retries. HTTP 404: model "llama3.1:8b" not found | provider=openai-api model=llama3.1:8b msgs=24 tokens=~8,376
+2026-06-18 19:43:25,628 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.21 parent_cmdline='(unknown)'
+2026-06-18 19:44:18,265 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=asyncio_0:140405951596224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-18 19:44:18,268 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 2.566286955968382s (attempt 1/3) thread=asyncio_0:140405951596224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-18 19:44:25,104 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=asyncio_0:140405951596224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-18 19:44:25,107 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 5.172639709227392s (attempt 2/3) thread=asyncio_0:140405951596224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-18 19:44:36,106 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=asyncio_0:140405951596224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-18 19:44:36,117 ERROR [20260618_190547_80a589a4] agent.conversation_loop: API call failed after 3 retries. HTTP 404: model "qwen2.5:7b" not found | provider=openai-api model=qwen2.5:7b msgs=24 tokens=~8,595
+2026-06-18 19:47:31,274 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.19 parent_cmdline='(unknown)'
+2026-06-18 19:50:53,290 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.15 parent_cmdline='(unknown)'
+2026-06-18 20:00:36,532 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.25s): {"output": "/usr/bin/bash: line 3: sudo: command not found", "exit_code": 127, "error": null}
+2026-06-18 20:00:46,230 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_view returned error (0.99s): {"success": false, "error": "Skill 'terminal' not found.", "available_skills": ["dogfood", "yuanbao", "claude-code", "codex", "hermes-agent", "opencode", "architecture-diagram", "ascii-art", "ascii-vi
+2026-06-18 20:00:46,231 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_view returned error (0.99s): {"success": false, "error": "Skill 'debugging' not found.", "available_skills": ["dogfood", "yuanbao", "claude-code", "codex", "hermes-agent", "opencode", "architecture-diagram", "ascii-art", "ascii-v
+2026-06-18 20:00:50,262 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_view returned error (0.75s): {"success": false, "error": "Skill 'terminal' not found.", "available_skills": ["dogfood", "yuanbao", "claude-code", "codex", "hermes-agent", "opencode", "architecture-diagram", "ascii-art", "ascii-vi
+2026-06-18 20:00:50,263 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_view returned error (0.75s): {"success": false, "error": "Skill 'debugging' not found.", "available_skills": ["dogfood", "yuanbao", "claude-code", "codex", "hermes-agent", "opencode", "architecture-diagram", "ascii-art", "ascii-v
+2026-06-18 20:01:08,119 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.17s): {"output": "/usr/bin/bash: line 3: apache2: command not found", "exit_code": 127, "error": null}
+2026-06-18 20:01:10,443 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.14s): {"output": "/usr/bin/bash: line 3: ps: command not found", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-18 20:04:09,842 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:04:09,843 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 2.0494569806199916s (attempt 1/3) thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b error=Connection error.
+2026-06-18 20:04:13,105 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:04:13,109 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 4.478587286972965s (attempt 2/3) thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b error=Connection error.
+2026-06-18 20:04:33,014 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:05:00,420 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:05:00,422 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 2.943503359110785s (attempt 1/3) thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b error=Connection error.
+2026-06-18 20:05:24,860 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:05:24,865 WARNING [20260618_190547_80a589a4] agent.conversation_loop: Retrying API call in 4.813674807795404s (attempt 2/3) thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b error=Connection error.
+2026-06-18 20:05:51,077 WARNING [20260618_190547_80a589a4] agent.conversation_loop: API call failed (attempt 3/3) error_type=APIConnectionError thread=asyncio_0:140324567512768 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:27b summary=Connection error.
+2026-06-18 20:05:51,080 ERROR [20260618_190547_80a589a4] agent.conversation_loop: API call failed after 3 retries. Connection error. | provider=openai-api model=gemma3:27b msgs=61 tokens=~14,308
+2026-06-18 20:38:50,866 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ReadError: 
+2026-06-18 20:38:50,873 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-06-18 20:38:58,004 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.77s): {"output": "Traceback (most recent call last):\n  File \"/root/.hermes/skills/netops/network-tools/service_check.py\", line 72, in <module>\n    main()\n  File \"/root/.hermes/skills/netops/network-to
+2026-06-18 20:39:16,545 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (); trying fallback IPs 149.154.166.110
+2026-06-18 20:39:19,174 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org path unreachable; using sticky fallback IP 149.154.166.110
+2026-06-18 20:39:34,701 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.9s): send_path_degraded
+2026-06-18 20:39:37,605 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 2/2, retrying in 4.8s): send_path_degraded
+2026-06-18 20:39:42,384 ERROR gateway.platforms.base: [Telegram] Failed to deliver response after 2 retries: send_path_degraded
+2026-06-18 20:41:03,221 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.25s): {"output": "/usr/bin/bash: line 3: docker: command not found", "exit_code": 127, "error": null}
+2026-06-18 20:49:22,039 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.10 parent_cmdline='(unknown)'
+2026-06-18 21:07:05,289 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.51 parent_cmdline='(unknown)'
+2026-06-18 21:37:28,096 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=1.51 parent_cmdline='(unknown)'
+2026-06-18 21:58:00,397 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.38 parent_cmdline='(unknown)'
+2026-06-18 22:24:44,933 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.02 parent_cmdline='(unknown)'
+2026-06-18 22:34:29,402 WARNING [20260618_223428_4dda6d] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-0_0:140395811948224 provider=openai-api base_url=https://api.openai.com/v1 model=ministral-3:8b summary=HTTP 401: Incorrect API key provided: 542588bd*********************************************IlIO. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-06-18 22:34:29,426 ERROR [20260618_223428_4dda6d] agent.conversation_loop: [subagent-0] Non-retryable client error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: 542588bd*********************************************IlIO. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-06-18 22:34:29,441 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool delegate_task returned error (1.22s): {"results": [{"task_index": 0, "status": "failed", "summary": "", "api_calls": 1, "duration_seconds": 0.92, "model": "ministral-3:8b", "exit_reason": "max_iterations", "tokens": {"input": 0, "output":
+2026-06-18 22:37:36,681 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_manage returned error (0.10s): {"success": false, "error": "Skill 'netops' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-18 22:37:41,493 WARNING [20260618_190547_80a589a4] tools.skills_tool: Skill name collision for 'network-tools': 2 candidates — /root/.hermes/skills/network-tools/SKILL.md; /root/.hermes/skills/netops/network-tools/SKILL.md
+2026-06-18 22:37:41,494 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_view returned error (0.12s): {"success": false, "error": "Ambiguous skill name 'network-tools': 2 skills match across your local skills dir and external_dirs. Refusing to guess — load one explicitly by its categorized path.", "ma
+2026-06-18 22:37:54,834 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Skill 'netops/network-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-18 22:38:05,098 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_manage returned error (2.26s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  39|   Monitoreo Apache cada 5 minutos - alerta automatica si cae\n  40| \n  41|
+2026-06-18 22:38:06,711 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-18 22:38:14,486 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Skill 'netops/network-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+
+[Tool loop warning: same_tool_failure_warning; count=4; s
+2026-06-18 22:38:19,748 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  39|   Monitoreo Apache cada 5 minutos - alerta automatica si cae\n  40| \n  41|
+2026-06-18 22:46:52,908 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (1.13s): {"output": "/usr/bin/bash: line 3: sudo: command not found", "exit_code": 127, "error": null}
+2026-06-18 22:50:03,888 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.14 parent_cmdline='(unknown)'
+2026-06-18 22:58:39,156 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.00 parent_cmdline='(unknown)'
+2026-06-18 22:59:12,435 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.11 parent_cmdline='(unknown)'
+2026-06-18 23:05:00,703 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.08 parent_cmdline='(unknown)'
+2026-06-18 23:08:38,377 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.48 parent_cmdline='(unknown)'
+2026-06-18 23:14:33,464 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.50s): {"output": "/usr/bin/bash: line 3: ps: command not found", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-18 23:17:49,804 WARNING [20260618_190547_80a589a4] agent.tool_executor: Tool terminal returned error (0.20s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-18 23:59:47,388 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.48 parent_cmdline='(unknown)'
+2026-06-19 05:45:05,673 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 1/3) error_type=InternalServerError thread=asyncio_1:140709882230464 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b summary=HTTP 503: Error code: 503 - {'error': "model 'gemma3:4b' is temporarily overloaded, please retry shortly or try a different model (ref: b3dcd487-f6ad-46b0-8a93-8e8075ea4101)"}
+2026-06-19 05:45:05,723 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 2.613285187965907s (attempt 1/3) thread=asyncio_1:140709882230464 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b error=Error code: 503 - {'error': "model 'gemma3:4b' is temporarily overloaded, please retry shortly or try a different model (ref: b3dcd487-f6ad-46b0-8a93-8e8075ea4101)"}
+2026-06-19 05:45:12,338 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 2/3) error_type=InternalServerError thread=asyncio_1:140709882230464 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b summary=HTTP 503: Error code: 503 - {'error': "model 'gemma3:4b' is temporarily overloaded, please retry shortly or try a different model (ref: c0423c2b-c172-4ca5-96ad-ed5a321149d4)"}
+2026-06-19 05:45:12,344 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 5.940266167380686s (attempt 2/3) thread=asyncio_1:140709882230464 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b error=Error code: 503 - {'error': "model 'gemma3:4b' is temporarily overloaded, please retry shortly or try a different model (ref: c0423c2b-c172-4ca5-96ad-ed5a321149d4)"}
+2026-06-19 05:47:10,997 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=asyncio_2:140709861250752 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3b summary=HTTP 404: model "ministral-3b" not found
+2026-06-19 05:47:10,999 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 2.1846417734659274s (attempt 1/3) thread=asyncio_2:140709861250752 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3b error=Error code: 404 - {'error': {'message': 'model "ministral-3b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 05:47:13,913 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=asyncio_2:140709861250752 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3b summary=HTTP 404: model "ministral-3b" not found
+2026-06-19 05:47:13,919 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 4.347723415413995s (attempt 2/3) thread=asyncio_2:140709861250752 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3b error=Error code: 404 - {'error': {'message': 'model "ministral-3b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 05:47:18,929 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=asyncio_2:140709861250752 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3b summary=HTTP 404: model "ministral-3b" not found
+2026-06-19 05:47:18,945 ERROR [20260619_053344_390f2432] agent.conversation_loop: API call failed after 3 retries. HTTP 404: model "ministral-3b" not found | provider=openai-api model=ministral-3b msgs=30 tokens=~7,810
+2026-06-19 05:52:00,414 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (23.58s): {"output": "traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets\n 1  _gateway (10.0.4.2)  0.343 ms  0.264 ms  0.399 ms\n 2  * * *\n 3  * * *\n 4  * * *\n 5  * * *\n 6  * * *\n 7  * * *\n 8  
+2026-06-19 05:52:38,805 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (11.72s): {"output": "Hit:1 http://deb.debian.org/debian bookworm InRelease\nGet:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]\nGet:3 http://deb.debian.org/debian-security bookworm-securit
+2026-06-19 05:53:08,203 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (5.29s): {"output": "Hit:1 http://deb.debian.org/debian bookworm InRelease\nGet:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]\nGet:3 http://deb.debian.org/debian-security bookworm-securit
+2026-06-19 05:53:21,963 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.16s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  65| ## Pitfalls Adicionales\n  66| - **Falta de herramientas de red:** Asegurar
+2026-06-19 06:10:30,173 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.19 parent_cmdline='(unknown)'
+2026-06-19 06:19:35,935 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 1/3) error_type=InternalServerError thread=asyncio_0:139773201086144 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b summary=HTTP 500: Error code: 500 - {'error': 'Internal Server Error (ref: 0f533878-0db1-478c-a5d6-b8825165afea)'}
+2026-06-19 06:19:35,937 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 2.589304166699287s (attempt 1/3) thread=asyncio_0:139773201086144 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b error=Error code: 500 - {'error': 'Internal Server Error (ref: 0f533878-0db1-478c-a5d6-b8825165afea)'}
+2026-06-19 06:19:40,270 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 2/3) error_type=InternalServerError thread=asyncio_0:139773201086144 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b summary=HTTP 500: Error code: 500 - {'error': 'Internal Server Error (ref: fac542a5-9da2-4806-b876-61c2bfac572e)'}
+2026-06-19 06:19:40,272 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 4.000934526319155s (attempt 2/3) thread=asyncio_0:139773201086144 provider=openai-api base_url=https://ollama.com/v1 model=gemma3:4b error=Error code: 500 - {'error': 'Internal Server Error (ref: fac542a5-9da2-4806-b876-61c2bfac572e)'}
+2026-06-19 06:20:29,534 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.09 parent_cmdline='(unknown)'
+2026-06-19 06:23:54,896 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=Thread-4 (run_agent):140231316588224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:23:54,905 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 2.784062685891308s (attempt 1/3) thread=Thread-4 (run_agent):140231316588224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:23:58,429 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=Thread-4 (run_agent):140231316588224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:23:58,430 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 5.346698145860688s (attempt 2/3) thread=Thread-4 (run_agent):140231316588224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:04,465 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=Thread-4 (run_agent):140231316588224 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:04,467 ERROR [20260619_062330_4cadef] agent.conversation_loop: API call failed after 3 retries. HTTP 404: model "qwen2.5:7b" not found | provider=openai-api model=qwen2.5:7b msgs=2 tokens=~4,213
+2026-06-19 06:24:26,542 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=Thread-8 (run_agent):140231308195520 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:26,545 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 2.0464995265185935s (attempt 1/3) thread=Thread-8 (run_agent):140231308195520 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:29,377 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=Thread-8 (run_agent):140231308195520 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:29,382 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 5.482175918254672s (attempt 2/3) thread=Thread-8 (run_agent):140231308195520 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:32,834 WARNING agent.title_generator: Title generation failed: Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:34,687 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=Thread-11 (run_agent):140230950647488 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:34,689 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 2.087119632676553s (attempt 1/3) thread=Thread-11 (run_agent):140230950647488 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:37,488 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=Thread-11 (run_agent):140230950647488 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:37,488 WARNING [20260619_062330_4cadef] agent.conversation_loop: Retrying API call in 4.425161157037374s (attempt 2/3) thread=Thread-11 (run_agent):140230950647488 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b error=Error code: 404 - {'error': {'message': 'model "qwen2.5:7b" not found', 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-06-19 06:24:42,556 WARNING [20260619_062330_4cadef] agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=Thread-11 (run_agent):140230950647488 provider=openai-api base_url=https://ollama.com/v1 model=qwen2.5:7b summary=HTTP 404: model "qwen2.5:7b" not found
+2026-06-19 06:24:42,575 ERROR [20260619_062330_4cadef] agent.conversation_loop: API call failed after 3 retries. HTTP 404: model "qwen2.5:7b" not found | provider=openai-api model=qwen2.5:7b msgs=2 tokens=~4,231
+2026-06-19 06:28:46,058 WARNING [20260619_062755_560a57] agent.tool_executor: Tool terminal returned error (0.31s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-19 06:28:48,807 WARNING [20260619_062755_560a57] agent.tool_executor: Tool terminal returned error (1.74s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-06-19 06:28:49,943 WARNING [20260619_062755_560a57] agent.tool_executor: Tool terminal returned error (0.13s): {"output": "ping: router1: Temporary failure in name resolution", "exit_code": 2, "error": null}
+
+[Tool loop warning: same_tool_failure_warning; count=3; terminal has failed 3 times this turn. This lo
+2026-06-19 06:33:36,919 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (0.28s): {"output": "System has not been booted with systemd as init system (PID 1). Can't operate.\nFailed to connect to bus: Host is down", "exit_code": 1, "error": null}
+2026-06-19 06:34:22,379 WARNING [20260619_053344_390f2432] tools.skills_tool: Skill name collision for 'network-tools': 2 candidates — /root/.hermes/skills/network-tools/SKILL.md; /root/.hermes/skills/netops/network-tools/SKILL.md
+2026-06-19 06:34:22,381 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_view returned error (0.09s): {"success": false, "error": "Ambiguous skill name 'network-tools': 2 skills match across your local skills dir and external_dirs. Refusing to guess — load one explicitly by its categorized path.", "ma
+2026-06-19 06:34:37,028 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.06s): {"success": false, "error": "Skill 'netops/network-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 06:34:48,047 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 06:34:57,060 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Skill 'netops' not found in active profile 'default'. Use skills_list() to see available skills."}
+
+[Tool loop warning: same_tool_failure_warning; count=3; skill_manage ha
+2026-06-19 06:34:58,752 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-19 06:35:15,290 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.13s): {"success": false, "error": "Could not find a match for old_string in the file\n\nDid you mean one of these sections?\n  13| rutas router2: python3 /root/.hermes/skills/netops/network-tools/routing_po
+2026-06-19 06:35:31,711 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+
+[Tool loop warning: same_tool_failure_warning; count=5; skill_man
+2026-06-19 06:35:34,139 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (0.46s): {"output": "/usr/bin/bash: line 3: pgrep: command not found\n/usr/bin/bash: line 3: ps: command not found\n/usr/bin/bash: line 3: ps: command not found", "exit_code": 1, "error": null, "exit_code_mean
+2026-06-19 06:36:04,356 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (0.20s): {"output": "/usr/bin/bash: line 3: mtr: command not found", "exit_code": 127, "error": null}
+2026-06-19 06:37:41,923 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.05s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 06:37:45,455 WARNING [20260619_053344_390f2432] tools.skills_tool: Skill name collision for 'network-tools': 2 candidates — /root/.hermes/skills/network-tools/SKILL.md; /root/.hermes/skills/netops/network-tools/SKILL.md
+2026-06-19 06:37:45,457 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_view returned error (0.03s): {"success": false, "error": "Ambiguous skill name 'network-tools': 2 skills match across your local skills dir and external_dirs. Refusing to guess — load one explicitly by its categorized path.", "ma
+2026-06-19 06:52:38,721 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.10 parent_cmdline='(unknown)'
+2026-06-19 06:57:38,187 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=asyncio_1:140282167719616 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3:8b summary=HTTP 429: Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 55d05869-c383-4b70-ba74-bf3af1b65018)'}
+2026-06-19 06:57:38,189 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 2.402540798994279s (attempt 1/3) thread=asyncio_1:140282167719616 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3:8b error=Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 55d05869-c383-4b70-ba74-bf3af1b65018)'}
+2026-06-19 06:57:41,655 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=asyncio_1:140282167719616 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3:8b summary=HTTP 429: Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 6daaac6c-330d-4a71-9d4f-d9c27cf12070)'}
+2026-06-19 06:57:41,667 WARNING [20260619_053344_390f2432] agent.conversation_loop: Retrying API call in 5.185198090053719s (attempt 2/3) thread=asyncio_1:140282167719616 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3:8b error=Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 6daaac6c-330d-4a71-9d4f-d9c27cf12070)'}
+2026-06-19 06:57:47,838 WARNING [20260619_053344_390f2432] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=asyncio_1:140282167719616 provider=openai-api base_url=https://ollama.com/v1 model=ministral-3:8b summary=HTTP 429: Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 31d8c5e0-57b4-4db5-8fc0-be68c26eb5a7)'}
+2026-06-19 06:57:47,846 ERROR [20260619_053344_390f2432] agent.conversation_loop: API call failed after 3 retries. HTTP 429: Error code: 429 - {'error': 'you (karolpalechor) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 31d8c5e0-57b4-4db5-8fc0-be68c26eb5a7)'} | provider=openai-api model=ministral-3:8b msgs=122 tokens=~20,546
+2026-06-19 07:16:37,949 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.05 parent_cmdline='(unknown)'
+2026-06-19 07:17:04,556 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ReadError: 
+2026-06-19 07:17:04,557 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-06-19 07:17:28,828 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool terminal returned error (23.87s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command denied by user. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt the same outcome
+2026-06-19 07:17:32,592 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.8s): send_path_degraded
+2026-06-19 07:17:35,407 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 2/2, retrying in 4.7s): send_path_degraded
+2026-06-19 07:17:40,111 ERROR gateway.platforms.base: [Telegram] Failed to deliver response after 2 retries: send_path_degraded
+2026-06-19 07:18:52,956 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=? parent_name=? loadavg_1m=0.55 parent_cmdline='(unknown)'
+2026-06-19 07:22:15,594 WARNING [20260619_053344_390f2432] tools.skills_tool: Skill name collision for 'network-tools': 2 candidates — /root/.hermes/skills/network-tools/SKILL.md; /root/.hermes/skills/netops/network-tools/SKILL.md
+2026-06-19 07:22:15,596 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_view returned error (0.08s): {"success": false, "error": "Ambiguous skill name 'network-tools': 2 skills match across your local skills dir and external_dirs. Refusing to guess — load one explicitly by its categorized path.", "ma
+2026-06-19 07:22:30,876 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 07:22:48,978 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills. Create it first with action='create'."}
+2026-06-19 07:22:53,509 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "file_content is required for 'write_file'.", "success": false}
+
+[Tool loop warning: same_tool_failure_warning; count=3; skill_manage has failed 3 times this turn. This looks like a loop. Do
+2026-06-19 07:24:11,292 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.03s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 07:24:26,477 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+2026-06-19 07:24:43,820 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.00s): {"error": "new_string is required for 'patch'. Use empty string to delete matched text.", "success": false}
+
+[Tool loop warning: same_tool_failure_warning; count=3; skill_manage has failed 3 times thi
+2026-06-19 07:24:51,433 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills."}
+
+[Tool loop warning: same_tool_failure_warning; count=4; skill_man
+2026-06-19 07:24:53,688 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool read_file returned error (0.00s): {"error": "Background review denied non-whitelisted tool: read_file. Only memory/skill tools are allowed."}
+2026-06-19 07:28:50,404 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+2026-06-19 07:28:51,407 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+2026-06-19 07:28:52,409 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+
+[Tool loop warning: same_tool_failure_warning; count=3; memory has failed 3 times this turn. This looks like a loop. Do
+2026-06-19 07:28:53,411 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool memory returned error (0.00s): {"error": "Unknown action 'None'. Use: add, replace, remove", "success": false}
+
+[Tool loop warning: same_tool_failure_warning; count=4; memory has failed 4 times this turn. This looks like a loop. Do
+2026-06-19 07:36:59,642 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_view returned error (0.07s): {"success": false, "error": "Skill 'routing-policy' not found.", "available_skills": ["dogfood", "network-tools", "yuanbao", "claude-code", "codex", "hermes-agent", "opencode", "architecture-diagram",
+2026-06-19 07:37:18,279 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills. Create it first with action='create'."}
+2026-06-19 07:37:23,953 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Skill 'netops-tools' not found in active profile 'default'. Use skills_list() to see available skills. Create it first with action='create'."}
+2026-06-19 07:37:28,564 WARNING [20260619_053344_390f2432] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "SKILL.md must start with YAML frontmatter (---). See existing skills for format."}
+
+[Tool loop warning: same_tool_failure_warning; count=3; skill_manage has failed 3 times

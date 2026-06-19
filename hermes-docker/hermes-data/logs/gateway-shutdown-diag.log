@@ -1,0 +1,421 @@
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-17T07:20:21Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.09 0.44 0.96 2/577 72
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-17T07:21:23Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.10 0.38 0.91 2/556 31
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-17T07:23:34Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.21 0.32 0.81 1/558 20
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-17T07:27:22Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.02 0.20 0.66 1/553 38
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-17T07:54:38Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.09 0.75 1.36 1/559 38
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T18:07:06Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.66 0.83 0.44 1/553 21
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:26:47Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.14 0.23 0.26 1/559 389
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:33:12Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.14 0.25 0.26 1/575 31
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:36:45Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.08 0.22 0.25 1/579 52
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:40:45Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.43 0.27 0.26 2/576 46
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:43:25Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.21 0.25 0.26 1/553 51
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:47:31Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.19 0.27 0.27 1/556 43
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T19:50:53Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.15 0.24 0.26 1/558 50
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T20:49:22Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.10 0.13 0.15 1/557 173
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T21:07:05Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.51 0.88 0.88 1/558 45
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T21:37:28Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+1.51 1.78 1.72 1/602 46
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T21:58:00Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.38 0.39 0.64 2/561 111
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T22:24:44Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.02 0.15 0.37 2/584 1011
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T22:50:03Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.14 0.21 0.27 1/601 357
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T22:58:39Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.00 0.07 0.17 1/575 156
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T22:59:12Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.11 0.09 0.18 7/557 36
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T23:05:00Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.08 0.16 0.18 5/567 58
+--- recent dmesg (oom/killed) ---
+[Thu Jun 18 22:59:12 2026] device vetha128309 left promiscuous mode
+[Thu Jun 18 22:59:12 2026] br-4c6d4e842a3d: port 1(vetha128309) entered disabled state
+[Thu Jun 18 22:59:27 2026] br-9f3da6c4be06: port 1(vethec6943f) entered blocking state
+[Thu Jun 18 22:59:27 2026] br-9f3da6c4be06: port 1(vethec6943f) entered disabled state
+[Thu Jun 18 22:59:27 2026] device vethec6943f entered promiscuous mode
+[Thu Jun 18 22:59:28 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered blocking state
+[Thu Jun 18 22:59:28 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered disabled state
+[Thu Jun 18 22:59:28 2026] device vethb1b55ff entered promiscuous mode
+[Thu Jun 18 22:59:28 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered blocking state
+[Thu Jun 18 22:59:28 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered forwarding state
+[Thu Jun 18 22:59:28 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered disabled state
+[Thu Jun 18 22:59:33 2026] eth0: renamed from veth7b3f631
+[Thu Jun 18 22:59:33 2026] eth0: renamed from vethe56ba3a
+[Thu Jun 18 22:59:33 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethec6943f: link becomes ready
+[Thu Jun 18 22:59:33 2026] br-9f3da6c4be06: port 1(vethec6943f) entered blocking state
+[Thu Jun 18 22:59:33 2026] br-9f3da6c4be06: port 1(vethec6943f) entered forwarding state
+[Thu Jun 18 22:59:33 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-9f3da6c4be06: link becomes ready
+[Thu Jun 18 22:59:33 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethb1b55ff: link becomes ready
+[Thu Jun 18 22:59:33 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered blocking state
+[Thu Jun 18 22:59:33 2026] br-9f3da6c4be06: port 2(vethb1b55ff) entered forwarding state
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T23:08:38Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.48 0.58 0.37 9/552 66
+--- recent dmesg (oom/killed) ---
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered disabled state
+[Thu Jun 18 23:05:10 2026] device veth0f9207d entered promiscuous mode
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered blocking state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered forwarding state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered disabled state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 2(veth97287c3) entered blocking state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 2(veth97287c3) entered disabled state
+[Thu Jun 18 23:05:10 2026] device veth97287c3 entered promiscuous mode
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 2(veth97287c3) entered blocking state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 2(veth97287c3) entered forwarding state
+[Thu Jun 18 23:05:10 2026] br-fd330c8c9e45: port 2(veth97287c3) entered disabled state
+[Thu Jun 18 23:05:12 2026] eth0: renamed from vetha9687d1
+[Thu Jun 18 23:05:12 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth97287c3: link becomes ready
+[Thu Jun 18 23:05:12 2026] br-fd330c8c9e45: port 2(veth97287c3) entered blocking state
+[Thu Jun 18 23:05:12 2026] br-fd330c8c9e45: port 2(veth97287c3) entered forwarding state
+[Thu Jun 18 23:05:12 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-fd330c8c9e45: link becomes ready
+[Thu Jun 18 23:05:12 2026] eth0: renamed from veth0df62f1
+[Thu Jun 18 23:05:12 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth0f9207d: link becomes ready
+[Thu Jun 18 23:05:12 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered blocking state
+[Thu Jun 18 23:05:12 2026] br-fd330c8c9e45: port 1(veth0f9207d) entered forwarding state
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-18T23:59:47Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.48 0.15 0.12 5/578 276
+--- recent dmesg (oom/killed) ---
+[Thu Jun 18 23:08:45 2026] br-c4338791e28e: port 1(vethe2dd0c4) entered blocking state
+[Thu Jun 18 23:08:45 2026] br-c4338791e28e: port 1(vethe2dd0c4) entered forwarding state
+[Thu Jun 18 23:08:45 2026] br-c4338791e28e: port 1(vethe2dd0c4) entered disabled state
+[Thu Jun 18 23:08:46 2026] br-c4338791e28e: port 2(vethdff3b1f) entered blocking state
+[Thu Jun 18 23:08:46 2026] br-c4338791e28e: port 2(vethdff3b1f) entered disabled state
+[Thu Jun 18 23:08:46 2026] device vethdff3b1f entered promiscuous mode
+[Thu Jun 18 23:08:46 2026] br-c4338791e28e: port 2(vethdff3b1f) entered blocking state
+[Thu Jun 18 23:08:46 2026] br-c4338791e28e: port 2(vethdff3b1f) entered forwarding state
+[Thu Jun 18 23:08:46 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-c4338791e28e: link becomes ready
+[Thu Jun 18 23:08:46 2026] br-c4338791e28e: port 2(vethdff3b1f) entered disabled state
+[Thu Jun 18 23:08:47 2026] eth0: renamed from veth1bd70be
+[Thu Jun 18 23:08:47 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethe2dd0c4: link becomes ready
+[Thu Jun 18 23:08:47 2026] br-c4338791e28e: port 1(vethe2dd0c4) entered blocking state
+[Thu Jun 18 23:08:47 2026] br-c4338791e28e: port 1(vethe2dd0c4) entered forwarding state
+[Thu Jun 18 23:08:47 2026] eth0: renamed from vethe372893
+[Thu Jun 18 23:08:48 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethdff3b1f: link becomes ready
+[Thu Jun 18 23:08:48 2026] br-c4338791e28e: port 2(vethdff3b1f) entered blocking state
+[Thu Jun 18 23:08:48 2026] br-c4338791e28e: port 2(vethdff3b1f) entered forwarding state
+[Thu Jun 18 23:41:30 2026] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[Thu Jun 18 23:41:30 2026] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-19T06:10:30Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.19 0.20 0.25 5/598 658
+--- recent dmesg (oom/killed) ---
+[Fri Jun 19 03:56:25 2026] device vethac3b656 entered promiscuous mode
+[Fri Jun 19 03:56:25 2026] br-d0fbcee96055: port 2(veth3975b19) entered blocking state
+[Fri Jun 19 03:56:25 2026] br-d0fbcee96055: port 2(veth3975b19) entered disabled state
+[Fri Jun 19 03:56:25 2026] device veth3975b19 entered promiscuous mode
+[Fri Jun 19 03:56:25 2026] br-d0fbcee96055: port 2(veth3975b19) entered blocking state
+[Fri Jun 19 03:56:25 2026] br-d0fbcee96055: port 2(veth3975b19) entered forwarding state
+[Fri Jun 19 03:56:25 2026] br-d0fbcee96055: port 2(veth3975b19) entered disabled state
+[Fri Jun 19 03:56:30 2026] eth0: renamed from vethfbe4ac2
+[Fri Jun 19 03:56:30 2026] eth0: renamed from veth2789476
+[Fri Jun 19 03:56:30 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethac3b656: link becomes ready
+[Fri Jun 19 03:56:30 2026] br-d0fbcee96055: port 1(vethac3b656) entered blocking state
+[Fri Jun 19 03:56:30 2026] br-d0fbcee96055: port 1(vethac3b656) entered forwarding state
+[Fri Jun 19 03:56:30 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-d0fbcee96055: link becomes ready
+[Fri Jun 19 03:56:30 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth3975b19: link becomes ready
+[Fri Jun 19 03:56:30 2026] br-d0fbcee96055: port 2(veth3975b19) entered blocking state
+[Fri Jun 19 03:56:30 2026] br-d0fbcee96055: port 2(veth3975b19) entered forwarding state
+[Fri Jun 19 04:53:46 2026] e1000: enp0s3 NIC Link is Down
+[Fri Jun 19 04:53:52 2026] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[Fri Jun 19 05:56:16 2026] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[Fri Jun 19 05:56:16 2026] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-19T06:20:29Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.09 0.23 0.26 5/579 160
+--- recent dmesg (oom/killed) ---
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 1(vetha909372) entered disabled state
+[Fri Jun 19 06:10:45 2026] device vetha909372 entered promiscuous mode
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 1(vetha909372) entered blocking state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 1(vetha909372) entered forwarding state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 1(vetha909372) entered disabled state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered blocking state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered disabled state
+[Fri Jun 19 06:10:45 2026] device veth32c0187 entered promiscuous mode
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered blocking state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered forwarding state
+[Fri Jun 19 06:10:45 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered disabled state
+[Fri Jun 19 06:10:49 2026] eth0: renamed from veth23d4e48
+[Fri Jun 19 06:10:49 2026] eth0: renamed from veth9d76452
+[Fri Jun 19 06:10:49 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth32c0187: link becomes ready
+[Fri Jun 19 06:10:49 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered blocking state
+[Fri Jun 19 06:10:49 2026] br-cdcbca0b29cd: port 2(veth32c0187) entered forwarding state
+[Fri Jun 19 06:10:49 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-cdcbca0b29cd: link becomes ready
+[Fri Jun 19 06:10:49 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vetha909372: link becomes ready
+[Fri Jun 19 06:10:49 2026] br-cdcbca0b29cd: port 1(vetha909372) entered blocking state
+[Fri Jun 19 06:10:49 2026] br-cdcbca0b29cd: port 1(vetha909372) entered forwarding state
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-19T06:52:38Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.10 0.14 0.18 5/589 639
+--- recent dmesg (oom/killed) ---
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered disabled state
+[Fri Jun 19 06:20:36 2026] device veth36b7339 entered promiscuous mode
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered blocking state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered forwarding state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered disabled state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered blocking state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered disabled state
+[Fri Jun 19 06:20:36 2026] device vethed15e8a entered promiscuous mode
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered blocking state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered forwarding state
+[Fri Jun 19 06:20:36 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered disabled state
+[Fri Jun 19 06:20:39 2026] eth0: renamed from veth6ddb2a0
+[Fri Jun 19 06:20:39 2026] eth0: renamed from veth5e9a18c
+[Fri Jun 19 06:20:39 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth36b7339: link becomes ready
+[Fri Jun 19 06:20:39 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered blocking state
+[Fri Jun 19 06:20:39 2026] br-1d2eeb5526d3: port 1(veth36b7339) entered forwarding state
+[Fri Jun 19 06:20:39 2026] IPv6: ADDRCONF(NETDEV_CHANGE): br-1d2eeb5526d3: link becomes ready
+[Fri Jun 19 06:20:39 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethed15e8a: link becomes ready
+[Fri Jun 19 06:20:39 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered blocking state
+[Fri Jun 19 06:20:39 2026] br-1d2eeb5526d3: port 2(vethed15e8a) entered forwarding state
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-19T07:16:38Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.05 0.13 0.14 5/581 106
+--- recent dmesg (oom/killed) ---
+[Fri Jun 19 06:52:39 2026] device veth109bbcc entered promiscuous mode
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered blocking state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered forwarding state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered blocking state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered disabled state
+[Fri Jun 19 06:52:39 2026] device veth7ccab8c entered promiscuous mode
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered blocking state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered forwarding state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered disabled state
+[Fri Jun 19 06:52:39 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered disabled state
+[Fri Jun 19 06:52:40 2026] eth0: renamed from veth39252f5
+[Fri Jun 19 06:52:40 2026] eth0: renamed from veth86b2023
+[Fri Jun 19 06:52:40 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth7ccab8c: link becomes ready
+[Fri Jun 19 06:52:40 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered blocking state
+[Fri Jun 19 06:52:40 2026] br-1d2eeb5526d3: port 2(veth7ccab8c) entered forwarding state
+[Fri Jun 19 06:52:40 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth109bbcc: link becomes ready
+[Fri Jun 19 06:52:40 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered blocking state
+[Fri Jun 19 06:52:40 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered forwarding state
+[Fri Jun 19 06:56:49 2026] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[Fri Jun 19 06:56:49 2026] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-19T07:18:53Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+0.55 0.40 0.24 3/575 53
+--- recent dmesg (oom/killed) ---
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered disabled state
+[Fri Jun 19 07:16:38 2026] device veth109bbcc left promiscuous mode
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth109bbcc) entered disabled state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 2(vethf17ab49) entered blocking state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 2(vethf17ab49) entered forwarding state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered blocking state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered disabled state
+[Fri Jun 19 07:16:38 2026] device veth3820d80 entered promiscuous mode
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered blocking state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered forwarding state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 2(vethf17ab49) entered disabled state
+[Fri Jun 19 07:16:38 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered disabled state
+[Fri Jun 19 07:16:41 2026] eth0: renamed from veth45bea06
+[Fri Jun 19 07:16:41 2026] eth0: renamed from veth3c35c3e
+[Fri Jun 19 07:16:41 2026] IPv6: ADDRCONF(NETDEV_CHANGE): veth3820d80: link becomes ready
+[Fri Jun 19 07:16:41 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered blocking state
+[Fri Jun 19 07:16:41 2026] br-1d2eeb5526d3: port 1(veth3820d80) entered forwarding state
+[Fri Jun 19 07:16:41 2026] IPv6: ADDRCONF(NETDEV_CHANGE): vethf17ab49: link becomes ready
+[Fri Jun 19 07:16:41 2026] br-1d2eeb5526d3: port 2(vethf17ab49) entered blocking state
+[Fri Jun 19 07:16:41 2026] br-1d2eeb5526d3: port 2(vethf17ab49) entered forwarding state
+=== end ===

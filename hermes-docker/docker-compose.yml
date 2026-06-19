@@ -1,0 +1,57 @@
+services:
+  hermes:
+    build: .
+    container_name: hermes-netops
+    restart: unless-stopped
+    network_mode: host
+    privileged: true
+    environment:
+      - TERMINAL_ENV=local
+      - OPENAI_API_KEY=542588bdae8c4681b47def7d7585ae10.b6F2HdF8p02qZC7mRB4aIlIO
+      - TELEGRAM_BOT_TOKEN=8845934016:AAHDUkSQYxZqFu9tpJhX8t8Ba9nbaInU5-o
+      - GATEWAY_ALLOW_ALL_USERS=true
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    volumes:
+      - ./hermes-data:/root/.hermes
+      - ./hermes-env/.env:/root/.hermes/.env
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/netops-apache-control.sh:/usr/local/bin/netops-apache-control.sh
+    stdin_open: true
+    tty: true
+
+  router1:
+    image: frrouting/frr:latest
+    container_name: router1
+    hostname: router1
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    networks:
+      lab-net:
+        ipv4_address: 172.30.0.10
+    volumes:
+      - ./routers/router1:/etc/frr
+    restart: unless-stopped
+
+  router2:
+    image: frrouting/frr:latest
+    container_name: router2
+    hostname: router2
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    networks:
+      lab-net:
+        ipv4_address: 172.30.0.20
+    volumes:
+      - ./routers/router2:/etc/frr
+    restart: unless-stopped
+
+networks:
+  lab-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
