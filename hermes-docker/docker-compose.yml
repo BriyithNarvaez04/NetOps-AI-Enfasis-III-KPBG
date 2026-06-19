@@ -7,8 +7,8 @@ services:
     privileged: true
     environment:
       - TERMINAL_ENV=local
-      - OPENAI_API_KEY=542588bdae8c4681b47def7d7585ae10.b6F2HdF8p02qZC7mRB4aIlIO
-      - TELEGRAM_BOT_TOKEN=8845934016:AAHDUkSQYxZqFu9tpJhX8t8Ba9nbaInU5-o
+      - OPENAI_API_KEY=<clave de API Ollama>
+      - TELEGRAM_BOT_TOKEN=<token de tu bot>
       - GATEWAY_ALLOW_ALL_USERS=true
     cap_add:
       - NET_RAW
