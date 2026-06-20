@@ -90,7 +90,7 @@ ollama pull qwen2.5:7b-instruct      # ~4.4 GB — alternativa
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/hermes-docker.git
+https://github.com/BriyithNarvaez04/NetOps-AI-Enfasis-III-KPBG.git
 cd hermes-docker
 ```
 
